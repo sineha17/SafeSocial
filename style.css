@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image:  linear-gradient(to left,#ccffff 0%, #cc66ff 100%);
+    
+    
+}
+nav{
+    width: 90%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items:center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 150px;
+    margin: 20px;
+    
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 35px;
+    font-size: large;
+}
+.navlinks ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+.navlinks ul li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:rgb(217, 84, 84);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.info{
+    width: 1000px;
+    height: 1000px;
+    position:absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background:rgb(244, 152, 152) ; 
+} 
+.textbox{
+    width: 90%;
+    color:maroon;
+    left:50%;
+    top: 20%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size:xx-large;
+}
+.textbox p{
+    font-size: 22px;
+    color:rgb(53, 3, 59);
+}
+.textbox p::after{
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background:rgb(53, 48, 48);
+    display: block;
+    margin: 10px;
+    
+}
+#twt{
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 12px 12px;
+    position: relative;
+    margin-top: 12%;
+    margin-left: 7.5%;
+
+}
+#yt{
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 12px 12px;
+    position: fixed;
+    margin-top: 12%;
+    margin-left: 17%;
+}
+#ig{
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 12px 12px;
+    position: relative;
+    margin-top: 12%;
+    margin-left: 17%;
+}
+#twt:hover{
+    border: 1px solid rgb(128,0,0);
+    background: rgb(128,0,0);
+    transition: 1s;
+}
+#ig:hover{
+    border: 1px solid rgb(128,0,0);
+    background: rgb(128,0,0);
+    transition: 1s;
+}
+#yt:hover{
+    border: 1px solid rgb(128,0,0);
+    background: rgb(128,0,0);
+    transition: 1s;
+}
+.twttext{
+    position: relative;
+    margin-top: 2%;
+    margin-left: -67.5%;
+    font-size: 20px;
+    color: rgb(53,3,59);
+    text-align: center;
+    width: [width of img];
+}
+.yttext{
+    position: relative;
+    margin-top: -5.5%;
+    margin-left: 0%;
+    font-size: 20px;
+    color: rgb(53,3,59);
+    text-align: center;
+    width: [width of img];
+}
+.igtext{
+    position:fixed;
+    margin-top: -6%;
+    margin-left: 72%;
+    font-size: 20px;
+    color: rgb(53,3,59);
+    text-align: center;
+    width: [width of img];
+}
